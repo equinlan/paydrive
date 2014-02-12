@@ -3,7 +3,7 @@ class Transaction
     @data = data
   end
   
-  def update_with(transaction)
+  def save
     row = @spreadsheet.first_empty_row
     
     # Add headers if they don't exist

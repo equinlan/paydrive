@@ -3,7 +3,8 @@ class ListenerController < ApplicationController
   protect_from_forgery except: :update
   
   def notify
-    Transaction.new params
+    transaction = Transaction.new params
+    transaction.save
     render nothing: true
   end
 end
