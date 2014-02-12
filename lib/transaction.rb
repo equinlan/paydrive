@@ -19,16 +19,9 @@ class Transaction
     
     # Prepare the data to appear in columns
     data = [
-      Time.now,
-      @data[:txn_id],
-      @data[:txn_type],
-      @data[:payer_email],
-      @data[:first_name],
-      @data[:last_name],
-      @data[:address_zip],
-      @data[:mc_gross],
-      @data[:mc_currency],
-      @data[:payment_status]]
+      Time.now, @data[:txn_id], @data[:txn_type], @data[:payer_email],
+      @data[:first_name], @data[:last_name], @data[:address_zip],
+      @data[:mc_gross], @data[:mc_currency], @data[:payment_status]]
     
     # Print the data for the current row
     for col in 1..data.size
