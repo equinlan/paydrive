@@ -1,5 +1,5 @@
 Paydrive::Application.routes.draw do
-  post "account/notify"
+  post "notify", to: 'listener#notify'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

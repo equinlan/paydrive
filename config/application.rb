@@ -24,5 +24,10 @@ module Paydrive
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    
+    @spreadsheet = spreadsheet.new
+      username: 'evan.quinlan@gmail.com',
+      password: 'Dr@bbl3shir3',
+      key: '0AsrJDgUN24rjdEIxamJVbFJ0S0RadU5COHdpQXVxNXc'
   end
 end
