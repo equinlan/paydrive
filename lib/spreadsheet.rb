@@ -9,4 +9,12 @@ class Spreadsheet
   def first_empty_row
     @ws.num_rows + 1
   end
+  
+  def ws
+    @ws
+  end
+  
+  def ws=(ws)
+    @ws = ws
+  end
 end
