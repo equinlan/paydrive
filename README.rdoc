@@ -7,3 +7,5 @@ This requires Ruby 2.0.0.
 Go into lib/transaction.rb and configure Google username and password, as well as the key for the spreadsheet to which you would like to post PayPal IPN notifications.
 
 If you want to test your setup with PayPal's IPN Simulator (https://developer.paypal.com/webapps/developer/applications/ipn_simulator) remember to change the URI parsed by the validate_IPN_notification function in app/controllers/listener_controller.rb to 'https://sandbox.paypal.com/cgi-bin/webscr?cmd=_notify-validate'.
+
+You must set up your PayPal account to send IPN notifications to this application at the '/notify' path.
